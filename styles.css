@@ -21,6 +21,15 @@ body {
   top: 10px;
   left: -7px;
 }
+.photo-small-snake {
+  width: 30px;
+  margin: 3px;
+  height: 30px;
+  transform: rotate(30deg);
+  position: relative;
+  top: 10px;
+  left: -7px;
+}
 .classes {
   border-style: solid;
   border-color: #ffffff;
