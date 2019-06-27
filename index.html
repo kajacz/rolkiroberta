@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="displayOpis.js"></script>
     <script type="text/javascript" src="stopTriki.js"></script>
+    <script type="text/javascript" src="gallery.js"></script>
 
     <title>Ranking Rolek</title>
   </head>
@@ -44,22 +45,16 @@
               <img class="photo-kubek" src="kubeczki/blekitny.png" /> - Przejazd
               między pachołkami tyłem obunóż
             </p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/czerwony.png" /> - Trik 2
+            <p class="trik">
+              <img class="photo-kubek" src="kubeczki/zolty.png" /> - Crab
             </p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/fioletowy.png" /> - Trik 3
+            <p class="trik">
+              <img class="photo-kubek" src="kubeczki/snake.png" /> - Mirror
+              snake
             </p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/niebieski.png" /> - Trik 4
-            </p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/pomaranczowy.png" /> - Trik
-              5
-            </p>
-            <p><img class="photo-kubek" src="kubeczki/zolty.png" /> - Trik 6</p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/zielony.png" /> - Trik 7
+            <p class="trik">
+              <img class="photo-kubek" src="kubeczki/fast.png" /> - Wygrany
+              wyścig z Kają
             </p>
           </div>
         </div>
@@ -73,26 +68,20 @@
           <div class="dropdown" id="aTrik"></div>
 
           <div class=" opis mt-3" id="opisTrik">
-            <p>
+            <p class="trik">
               <img class="photo-kubek" src="kubeczki/blekitny.png" /> - Przejazd
               między pachołkami tyłem obunóż
             </p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/czerwony.png" /> - Trik 2
+            <p class="trik">
+              <img class="photo-kubek" src="kubeczki/zolty.png" /> - Crab
             </p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/fioletowy.png" /> - Trik 3
+            <p class="trik">
+              <img class="photo-kubek" src="kubeczki/snake.png" /> - Mirror
+              snake
             </p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/niebieski.png" /> - Trik 4
-            </p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/pomaranczowy.png" /> - Trik
-              5
-            </p>
-            <p><img class="photo-kubek" src="kubeczki/zolty.png" /> - Trik 6</p>
-            <p>
-              <img class="photo-kubek" src="kubeczki/zielony.png" /> - Trik 7
+            <p class="trik">
+              <img class="photo-kubek" src="kubeczki/fast.png" /> - Wygrany
+              wyścig z Kają
             </p>
           </div>
         </div>
@@ -242,7 +231,10 @@
         >
           <h3 class="col-sm-12 text-center container-fluid">KLASA S</h3>
           <img class="photo" src="photos/olaf.jpg" />
-          <img class="photo" src="photos/hipek.jpg" />
+          <div class="item">
+            <img class="photo-small-kubek" src="kubeczki/blekitny.png" /> <br />
+            <img class="photo" src="photos/hipek.jpg" />
+          </div>
           <br />
           <div class="dropdown" id="a6"></div>
           <div class="opis mt-3" id="opis6">
@@ -254,12 +246,17 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-12 mt-5 pt-4 mb-2 classes text-center">
-      <h3 class="col-sm-12 text-center">RELACJA</h3>
+    <!-- <div class="col-sm-12 mt-5 pt-4 mb-2 text-center">
+      <h3 class="col-sm-12 relacja text-center">RELACJA</h3>
 
       <br />
 
       <div class="mt-3"></div>
+
+      
+
+      
+      </div> -->
     </div>
   </body>
 </html>
