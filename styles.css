@@ -69,8 +69,19 @@ h3 {
   z-index: 99; /* Make sure it does not overlap */
 }
 
+.trikiStopped {
+  position: absolute;
+  top: 718px;
+  right: 30px;
+  z-index: 99;
+}
+
 .item {
   vertical-align: bottom;
   display: inline-block;
   text-align: center;
+}
+
+.trik {
+  font-size: 110%;
 }

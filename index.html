@@ -2,9 +2,12 @@
 <html lang="pl">
   <head>
     <meta charset="UTF-8" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="displayOpis.js"></script>
+    <script type="text/javascript" src="stopTriki.js"></script>
 
     <title>Ranking Rolek</title>
   </head>
@@ -31,14 +34,15 @@
           </div>
         </div>
 
-        <div class="d-none d-md-block triki col-sm-2 mt-4 classes">
+        <div class="d-none d-md-block trikiBasic triki col-sm-2 mt-4 classes">
           <h3 class="col-sm-12 text-center">TRIKI</h3>
 
           <br />
 
           <div class=" mt-3">
-            <p>
-              <img class="photo-kubek" src="kubeczki/blekitny.png" /> - Trik 1
+            <p class="trik">
+              <img class="photo-kubek" src="kubeczki/blekitny.png" /> - Przejazd
+              między pachołkami tyłem obunóż
             </p>
             <p>
               <img class="photo-kubek" src="kubeczki/czerwony.png" /> - Trik 2
@@ -70,7 +74,8 @@
 
           <div class=" opis mt-3" id="opisTrik">
             <p>
-              <img class="photo-kubek" src="kubeczki/blekitny.png" /> - Trik 1
+              <img class="photo-kubek" src="kubeczki/blekitny.png" /> - Przejazd
+              między pachołkami tyłem obunóż
             </p>
             <p>
               <img class="photo-kubek" src="kubeczki/czerwony.png" /> - Trik 2
@@ -98,21 +103,15 @@
         >
           <h3 class="col-sm-12 text-center container-fluid">ADEPT</h3>
 
-          <div class="item">
+          <!-- <div class="item">
             <img class="photo-small-kubek" src="kubeczki/zielony.png" />
             <img class="photo-small-kubek" src="kubeczki/zolty.png" /><br />
             <img class="photo" src="photos/piotr.jpg" />
-          </div>
+          </div> -->
           <img class="photo" src="photos/kaja.jpg" />
-          <img class="photo" src="photos/zbyl.jpg" />
-          <img class="photo" src="photos/tomus.jpg" />
           <img class="photo" src="photos/hary.jpg" />
           <img class="photo" src="photos/karolina.jpg" />
-          <div class="item">
-            <img class="photo-small-kubek" src="kubeczki/zielony.png" />
-            <img class="photo-small-kubek" src="kubeczki/zolty.png" /><br />
-            <img class="photo" src="photos/michalina.jpg" />
-          </div>
+          <img class="photo" src="photos/michalina.jpg" />
           <img class="photo" src="photos/loczek.jpg" />
           <img class="photo" src="photos/daria.jpg" />
           <img class="photo" src="photos/choj.jpg" />
@@ -143,7 +142,9 @@
         >
           <h3 class="col-sm-12 text-center container-fluid">PADAWAN</h3>
           <img class="photo" src="photos/lukasz.jpg" />
-          <img class="photo" src="photos/olaf.jpg" />
+          <img class="photo" src="photos/piotr.jpg" />
+          <img class="photo" src="photos/zbyl.jpg" />
+          <img class="photo" src="photos/tomus.jpg" />
           <br />
           <div class="dropdown" id="a2"></div>
           <div class="opis mt-3" id="opis2">
@@ -191,7 +192,7 @@
           onclick="javascript:showDiv('opis4','a4');"
         >
           <h3 class="col-sm-12 text-center container-fluid">KLASA B</h3>
-          <img class="photo" src="photos/hipek.jpg" />
+
           <br />
           <div class="dropdown" id="a4"></div>
           <div class="opis mt-3" id="opis4">
@@ -201,8 +202,6 @@
             </p>
             <ul>
               <b>Egzamin: </b>
-              <br />
-              - Być na równi lub wygrać wyścig szybkościowy z Kają
               <br />
               -Jazda na 2 kółkach
               <br />
@@ -242,7 +241,9 @@
           onclick="javascript:showDiv('opis6','a6');"
         >
           <h3 class="col-sm-12 text-center container-fluid">KLASA S</h3>
-
+          <img class="photo" src="photos/olaf.jpg" />
+          <img class="photo" src="photos/hipek.jpg" />
+          <br />
           <div class="dropdown" id="a6"></div>
           <div class="opis mt-3" id="opis6">
             <p>
@@ -252,6 +253,13 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="col-sm-12 mt-5 pt-4 mb-2 classes text-center">
+      <h3 class="col-sm-12 text-center">RELACJA</h3>
+
+      <br />
+
+      <div class="mt-3"></div>
     </div>
   </body>
 </html>
